@@ -1,0 +1,42 @@
+.root-font{font-size:15px}
+:root{
+  --bg:#f5f7fb;
+  --card:#fff;
+  --accent:#0066ff;
+  --danger:#d9534f;
+}
+html{font-size:15px}
+.body-wrap{min-height:100vh;display:flex;flex-direction:column}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);margin:0;padding:18px 14px;color:#111}
+.container{max-width:820px;margin:14px auto;padding:6px}
+.card{background:var(--card);padding:14px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.06);margin-bottom:16px}
+.form label{display:block;margin-bottom:8px;font-size:0.95rem}
+.form input,.form textarea{width:100%;padding:8px;margin-top:6px;border:1px solid #e6e9ee;border-radius:6px;box-sizing:border-box;font-size:0.95rem}
+.form textarea{min-height:90px}
+.form button{margin-top:10px;padding:8px 12px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:0.95rem}
+.form button:hover{opacity:0.96}
+.list .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+.list .filters input[type="text"], .list .filters input[type="date"]{padding:7px;border-radius:6px;border:1px solid #e6e9ee;font-size:0.92rem}
+.list input[type=date]{width:150px}
+.feedback-item{border-top:1px solid #eef1f5;padding:10px 0}
+.feedback-item:first-child{border-top:none}
+.feedback-item .meta{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.feedback-item .meta strong{font-size:1rem}
+.feedback-item .email{color:#555;font-size:0.9rem}
+.feedback-item .message{margin:6px 0 0 0;line-height:1.4;color:#222;font-size:0.96rem}
+.actions{margin-top:10px}
+.actions button{padding:7px 10px;border-radius:6px;border:none;cursor:pointer;font-size:0.92rem}
+.actions .danger{background:var(--danger);color:#fff}
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.42);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal{background:#fff;padding:14px;border-radius:8px;min-width:280px;max-width:520px;width:100%;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+
+/* Responsive tweaks */
+@media (max-width: 640px){
+  html{font-size:14px}
+  .container{padding:6px}
+  .list .filters{gap:6px}
+  .list input[type=date]{width:130px}
+  .feedback-item .meta{flex-direction:column;align-items:flex-start}
+}
+
