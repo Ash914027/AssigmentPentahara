@@ -1,6 +1,6 @@
 # Feedback Collector
 
-Simple feedback collector demo using React + Vite.
+Simple feedback collector demo using React + Vite
 
 Run locally:
 
@@ -23,3 +23,4 @@ Files of interest:
 - `src/components/FeedbackList.jsx`
 - `src/components/FeedbackItem.jsx`
 - `src/services/FeedbackService.js`
+
